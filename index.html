@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="트라이123 실계좌 공개 기록. 2시간마다 자동 갱신됩니다.">
+  <title>트라이123 · 실계좌 공개 기록</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="static/site.css">
+  <script src="static/site.js" defer></script>
+</head>
+<body>
+  <div class="shell">
+    <header class="nav">
+      <div class="mark">
+        <span class="logo" aria-hidden="true"><i></i><i></i><i></i></span>
+        <div><strong>트라이123</strong><span>실계좌 공개 기록</span></div>
+      </div>
+      <div class="nav-right">
+        <p class="meta"><span id="status" class="badge">조회 중</span><span id="generated"></span></p>
+        <button id="hide-toggle" type="button" aria-pressed="false" aria-label="금액 숨기기"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12Z"/><circle cx="12" cy="12" r="2.8"/></svg><span>금액 숨기기</span></button>
+      </div>
+    </header>
+    <p id="notice" class="notice" role="status" aria-live="polite" hidden></p>
+    <main>
+      <section id="hero" class="hero" aria-label="트라이123 요약"><p class="empty">불러오는 중</p></section>
+      <section id="strategies" class="section" aria-labelledby="strategies-title"></section>
+      <section id="monthly" class="section" aria-labelledby="monthly-title"></section>
+    </main>
+    <footer class="fineprint">
+      <p>2시간마다 자동으로 갱신됩니다 · 세 전략 모두 사전에 정한 규칙(신호)에 따라 운용합니다 · 보유 종목과 포지션은 공개하지 않습니다</p>
+      <p>일간은 시장별 기준이며 암호자산은 오늘 0시 대비입니다 · 원화 환산 · 개인 투자 기록이며 투자 권유가 아닙니다</p>
+    </footer>
+  </div>
+</body>
+</html>
