@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#090b0e">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="description" content="트라이123 실계좌 공개 기록. 매시간 10분에 자동 갱신됩니다.">
+  <title>트라이123 · 실계좌 공개 기록</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="static/site.css?v=bd4b10490e594b44">
+  <script src="static/freshness.js?v=22dc5ffc525797b0" defer></script>
+  <script src="static/site.js?v=ff43ccb9f98526e8" defer></script>
+</head>
+<body>
+  <div class="shell">
+    <!-- 첫 화면: 상단바 + 요약. 휴대폰에서는 한 페이지(100svh)를 채운다. -->
+    <div class="page page-first" id="page-hero">
+      <header class="nav">
+        <div class="mark">
+          <span class="logo" aria-hidden="true"><i></i><i></i><i></i></span>
+          <div><strong>트라이123</strong><span>실계좌 공개 기록</span></div>
+        </div>
+        <div class="nav-right">
+          <p class="meta"><span id="status" class="badge">조회 중</span><span id="generated"></span></p>
+          <button id="hide-toggle" type="button" aria-pressed="false" aria-label="금액 숨기기"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12Z"/><circle cx="12" cy="12" r="2.8"/></svg><span>금액 숨기기</span></button>
+        </div>
+      </header>
+      <p id="account-day" class="micro" aria-live="polite"></p>
+      <p id="notice" class="notice" role="status" aria-live="polite" hidden></p>
+      <section id="hero" class="hero" aria-label="트라이123 요약"><p class="empty">불러오는 중</p></section>
+    </div>
+    <main>
+      <section id="strategies" class="section page" aria-labelledby="strategies-title"></section>
+      <section id="monthly" class="section page" aria-labelledby="monthly-title"></section>
+      <section id="benchmark" class="section page" aria-labelledby="benchmark-title"></section>
+    </main>
+  </div>
+</body>
+</html>
